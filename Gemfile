@@ -12,6 +12,7 @@ gem 'active_model_serializers'
 gem 'has_secure_token'
 gem 'foundation-rails'
 gem 'bcrypt', '~> 3.1.7'
+gem 'slim-rails'
 
 group :development, :test do
   gem 'factory_girl_rails'
