@@ -17,7 +17,7 @@ Rails.application.configure do
   # config.action_cable.allowed_request_origins = [ 'http://example.com', /http:\/\/example.*/ ]
   # config.force_ssl = true
   config.log_level = :debug
-  config.log_tags = [ :request_id ]
+  config.log_tags = [:request_id]
   # config.cache_store = :mem_cache_store
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "EMS_#{Rails.env}"
@@ -28,11 +28,11 @@ Rails.application.configure do
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
 
-  if ENV["RAILS_LOG_TO_STDOUT"].present?
+  if ENV['RAILS_LOG_TO_STDOUT'].present?
     logger           = ActiveSupport::Logger.new(STDOUT)
     logger.formatter = config.log_formatter
     config.logger = ActiveSupport::TaggedLogging.new(logger)
   end
-  
+
   config.active_record.dump_schema_after_migration = false
 end
